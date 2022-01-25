@@ -1,0 +1,35 @@
+{
+  "name": "nodejs-testing-examples",
+  "version": "0.1.0",
+  "description": "A repository to provide examples of how you can test Node.js",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "basic-test": "node ./basic-module-testing/test/index.js",
+    "express-test": "mocha ./express-application-testing/test -R spec",
+    "mocha-test": "mocha ./module-testing-with-mocha/index.js -R spec",
+    "proxyquire-test": "mocha ./proxyquire-dependency-mocks/test/index.js -R spec",
+    "start": "node ./express-application-testing/application.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Arpit6055/jenkins_practice-.git"
+  },
+  "author": "Evan Shortiss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arpit6055/jenkins_practice-/issues"
+  },
+  "homepage": "https://github.com/Arpit6055/jenkins_practice-",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.17.2",
+    "request": "^2.65.0",
+    "supertest": "^6.2.2"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "mocha": "^2.3.3",
+    "proxyquire": "^1.7.3"
+  }
+}
